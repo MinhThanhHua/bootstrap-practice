@@ -1,0 +1,185 @@
+                                Bài 1: Install.html
+
+Container-X sẽ co dãn từ sm->md->lg->xl với: 
+    X là giá trị lớn nhất, khi width đạt X thì sẽ ko kéo dãn hơn được nữa.
+--------------------------
+p-X là padding
+border là border
+text-white là chữ trắng
+bg-X với 
+    dark: nền tối
+    primary: xanh lam
+jumbotron: tạo 1 khu vực bao bọc có màu xám, mục đích làm nổi bật text bên trong
+--------------------------
+
+
+                                Bài 2: Lưới - Grid.html
+col-sm-3, có chức năng quy định width tối thiếu gồm 3 thuộc tính:
+    col: key cột
+    sm: có thể thay bằng 4 size màn hình sm, md, lg, xl
+    3: số cột con
+=> 4 size màn hình sẽ tướng ứng với các px, dùng số đó / 12, * cho số được truyền vào
+khi không đạt độ dài tối thiểu sẽ xuống dòng
+
+                                Bài 3: Text-Color - text.html
+--------------------------
+font-weight-X với
+    bold: đậm
+    bolder: đậm hơn
+    light: nhat
+    lighter: nhạt hơn
+    normal: bình thường
+small: 80% so với bản gốc
+text-X với
+    left: canh trái
+    center: giữa
+    right: phải
+    break: xuống dòng
+    lowercase: viết thường   
+bg-X với
+    primary xanh nước biển
+    success xanh lá
+    info xanh da trời
+    warning vàng
+    danger đỏ
+    secondary xám 
+    dark xám đậm
+--------------------------
+
+                                Bài 4: Table
+--------------------------
+table-X với
+    striped: tạo dòng xám trắng xen kẽ lẫn nhau
+    bordered: thêm các border giữa các phần tử td
+    hover: hover mouse trên pc
+    dark: background tối
+    borderless: xóa tất các viền
+    color(primary, warning,...) bọc thẻ tr
+    responsive or responsive-X: hiển thị scroll ngang khi ở 1 màn hình nào đó (sm, md, lg, xl)
+--------------------------
+                                
+                                Bài 5: Image
+--------------------------
+Để img đẹp cần set thêm width, height
+rounded: bo tròn cạnh image
+rounded-circle: bo tròn hình, có thể ra tròn hoặc bầu (tùy w,h)
+img-thumbnail: ảnh thu nhỏ
+float-left: trôi về trái
+float-right: trôi về phải
+Trôi giữa: dùng display block (tạo khối như div) và margin auto: mx-auto d-block
+-------------------------- 
+
+                                Bài 6: Alert
+--------------------------
+alert alert-X với
+    color(primary, danger, secondary,...) màu sắc cho alert(div)
+    dismissible: tắt(ẩn) alert đi khi click vào btn, link với thẻ đó có gắn 
+        class="close" 
+        data-dismiss="alert"
+    fade show: animate biến mất chậm rãi
+-------------------------- 
+
+                                Bài 7: Button
+--------------------------
+btn btn-X với
+    color(primary, danger, secondary,...) màu sắc cho button (button, a, input)
+    outline-primary: chỉ có màu viền và chữ, btn ko màu
+    size(lg, md, sm): kích thước btn
+    block: hiển thị khối, cover theo div cha
+active
+disabled
+btn-group-X: gom nhóm các button css thành 1 btn chung (action vẫn riêng)
+    '': empty, ko có -X (btn-group) sẽ dùng kích thước mặc định
+    lg: large
+    sm: small
+    vertical: nhóm btn hiển thị thành chiều dọc, đứng thẳng
+-------------------------- 
+
+                                Bài 8: Badges
+--------------------------
+badge badges-X với
+    color(primary, dark, light,...): màu sắc cho badges
+    pill: badge hình viên thuốc
+
+-------------------------- 
+
+                                Bài 8: Progress-bar
+--------------------------
+progress (div parent) progress-bar (div-child)
+Có thể thay đổi background với bg-X
+progress-bar-X
+    striped: kẻ sọc cho thanh bar
+    animated: animate cho thanh bar, phối hợp với striped, tạo thành gợn sóng
+-------------------------- 
+
+                                Bài 9: Spinner - loading
+--------------------------
+spinner-X-S
+    border: dạng tròn thường thấy
+    grow: dạng chấm tròn, to nhỏ
+    S(sm, md, lg): kích thước spinner
+Có thể đổi màu spinner bằng text-X
+-------------------------- 
+
+                                Bài 9: Paginate - Breadcrumbs 
+--------------------------
+pagination (ul) page-item (li) page-link(a)
+pagination-S(sm, md, lg)
+active (li)
+disabled (li)
+justify-content-X
+    left (default)
+    right 
+    center
+
+-------------------------- 
+
+                                Bài 10: Card 
+--------------------------
+card card-header card-body card-footer
+có thể thay đổi màu background bằng bg-X
+card-X
+    Inbody:
+        title: tiêu đề thẻ
+        text: khi thẻ p cuối trong card-body sẽ được xóa margin-bottom
+    Parent:
+        colums: chia div cha thành 3 cột/card, width < 576px hiển thị dọc
+        deck: chia div cha thành n phần tử, ứng với số n card 
+        group: hiển thị liền kề, không có khoảng trắng giữa các card 
+stretched-link: thêm vào thẻ a trong card, card đó sẽ trở thành 1 link
+-------------------------- 
+
+                                Bài 11: Collapse
+--------------------------
++ class="collapse" (div) 
++ data-toggle="collapse" and href="#id" or data-target="#id" (button/link)
+Có thể tạo collapse với list card ở bài học trước (click header->open body), 
+có thể dùng data-parent="#div_parent" với div_parent là id bao bọc các card,
+để  khi show collapse sẽ có thể close được các collapse con thuộc id đó đang mở
+-------------------------- 
+
+                                Bài 12: Nav - Navbar
+--------------------------
++ class="nav" (ul) 
++ nav-item (li) nav-link (a)
+nav-X
+    tabs: hiển thị dạng tabs
+    pills: hiển thị hình btn (viên thuốc)
+    justified: chiều rộng các tab là bằng nhau
+    content: nội dung thay đổi khi click tabs, với (nav-content bao ngoài các div con)
+        data-toggle="tab/pill" ở link
+        class="tab-pane active" ở div thuộc children
+flex-column: hiển thị dọc
+
+navbar-expand-X (div parent) navbar-nav (ul) nav-item(li) nav-link (a)
+    size(xl | lg | md | sm ): tạo thanh menu ngang (remove sẽ tạo dọc)
+Có thể thay đổi background bằng bg-X
+navbar-brand: LOGO
+-------------------------- 
+
+                                Bài 13: Dropdown
+--------------------------
++ class="dropdown" (div parent) 
++ data-toggle="dropdown" and class="dropdown-toggle" (button/link)
++ list items dropdown-menu (div) dropdown-item (link)
+-------------------------- 
