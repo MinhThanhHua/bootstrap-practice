@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./public/css/bootstrap.min.css">
+    <script src="./public/js/jquery-3.6.0.min.js"></script>
+    <script src="./public/js/bootstrap.min.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <h3>Collapsible</h3>
+        <p>Demo đơn giản vầ collapse</p>
+        <button class="btn btn-info" data-toggle="collapse" data-target="#detail">Click for detail</button>
+        <div id="detail" class="collapse">
+            <p> Sóng gợn tràng giang buồn điệp điệp,
+                Con thuyền xuôi mái nước song song.
+                Thuyền về nước lại, sầu trăm ngả;
+                Củi một cành khô lạc mấy dòng. </p>
+
+            <p> Lơ thơ cồn nhỏ gió đìu hiu,
+                Đâu tiếng làng xa vãn chợ chiều.
+                Nắng xuống, trời lên sâu chót vót;
+                Sông dài, trời rộng, bến cô liêu.</p>
+
+            <p> Bèo giạt về đâu, hàng nối hàng;
+                Mênh mông không một chuyến đò ngang.
+                Không cầu gợi chút niềm thân mật,
+                Lặng lẽ bờ xanh tiếp bãi vàng.</p>
+
+            <p> Lớp lớp mây cao đùn núi bạc,
+                Chim nghiêng cánh nhỏ: bóng chiều sa.
+                Lòng quê dợn dợn vời con nước,
+                Không khói hoàng hôn cũng nhớ nhà.</p>
+        </div>
+    </div>
+    <div class="container">
+        <h3>Collapse theo khối (card)</h3>
+        <div id="parent">
+            <div class="card">
+                <div class="card-header">
+                    <a href="#collapseA" data-toggle="collapse" class="card-link">Item 1</a>
+                </div>
+                <div id="collapseA" class="collapse" data-parent="#parent">
+                    <div class="card-body">
+                        Nội dung bên trong
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <a href="#collapseB" data-toggle="collapse" class="card-link">Item 2</a>
+                </div>
+                <div id="collapseB" class="collapse" data-parent="#parent">
+                    <div class="card-body">
+                        Nội dung bên trong
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <a href="#collapseC" data-toggle="collapse" class="card-link">Item 3</a>
+                </div>
+                <div id="collapseC" class="collapse" data-parent="#parent">
+                    <div class="card-body">
+                        Nội dung bên trong
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

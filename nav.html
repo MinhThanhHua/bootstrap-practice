@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./public/css/bootstrap.min.css">
+    <script src="./public/js/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="./public/js/bootstrap.min.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <h3>Menu đơn giản</h3>
+        <ul class="nav">
+            <li class="nav-item"><a href="" class="nav-link">Link 1</a></li>
+            <li class="nav-item"><a href="" class="nav-link">Link 2</a></li>
+            <li class="nav-item"><a href="" class="nav-link">Link 3</a></li>
+        </ul>
+        <h3>Menu dọc</h3>
+        <ul class="nav flex-column">
+            <li class="nav-item"><a href="" class="nav-link">Link 1</a></li>
+            <li class="nav-item"><a href="" class="nav-link">Link 2</a></li>
+            <li class="nav-item"><a href="" class="nav-link">Link 3</a></li>
+        </ul>
+        <h3>Menu like tabs</h3>
+        <ul class="nav nav-tabs">
+            <li class="nav-item"><a href="" class="nav-link active">Link 1 active in link</a></li>
+            <li class="nav-item"><a href="" class="nav-link">Link 2</a></li>
+            <li class="nav-item"><a href="" class="nav-link">Link 3</a></li>
+        </ul>
+        <h3>Menu like pills</h3>
+        <ul class="nav nav-pills">
+            <li class="nav-item"><a href="" class="nav-link active">Link 1 active in link</a></li>
+            <li class="nav-item"><a href="" class="nav-link">Link 2</a></li>
+            <li class="nav-item"><a href="" class="nav-link">Link 3</a></li>
+        </ul>
+        <h3>Menu có chiều rộng = nhau</h3>
+        <ul class="nav nav-pills nav-justified">
+            <li class="nav-item"><a href="" class="nav-link ">Link 1 active in link</a></li>
+            <li class="nav-item"><a href="" class="nav-link active">Link 2</a></li>
+            <li class="nav-item"><a href="" class="nav-link">Link 3</a></li>
+        </ul>
+        <h3>Menu with toggle</h3>
+        <ul class="nav nav-tabs">
+            <li class="nav-item dropdown">
+                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Link 1</a>
+                <div class="dropdown-menu">
+                    <a href="" class="dropdown-item">Item 1</a>
+                    <a href="" class="dropdown-item">Item 1</a>
+                    <a href="" class="dropdown-item">Item 1</a>
+                </div>
+            </li>
+            <li class="nav-item"><a href="" class="nav-link active">Link 2</a></li>
+            <li class="nav-item"><a href="" class="nav-link">Link 3</a></li>
+        </ul>
+        <!-- Thay đổi nội dung con khi click tabs/pills -->
+        <h3>Tab thay đổi cùng content</h3>
+        <ul class="nav nav-tabs">
+            <li class="nav-item"><a href="#link1" data-toggle="tab" class="nav-link active">Link 1</a></li>
+            <li class="nav-item"><a href="#link2" data-toggle="tab" class="nav-link">Link 2</a></li>
+            <li class="nav-item"><a href="#link3" data-toggle="tab" class="nav-link">Link 3</a></li>
+        </ul>
+        <div class="tab-content">
+            <div id="link1" class="tab-pane active">COntent 1</div>
+            <div id="link2" class="tab-pane">COntent 2</div>
+            <div id="link3" class="tab-pane">COntent 3</div>
+        </div>
+        <h3>Pills thay đổi cùng content (như tabs, đổi key)</h3>
+        <ul class="nav nav-pills">
+            <li class="nav-item"><a href="#link1" data-toggle="pill" class="nav-link active">Link 1</a></li>
+            <li class="nav-item"><a href="#link2" data-toggle="pill" class="nav-link">Link 2</a></li>
+            <li class="nav-item"><a href="#link3" data-toggle="pill" class="nav-link">Link 3</a></li>
+        </ul>
+        <div class="tab-content">
+            <div id="link1" class="tab-pane active">COntent 1</div>
+            <div id="link2" class="tab-pane">COntent 2</div>
+            <div id="link3" class="tab-pane">COntent 3</div>
+        </div>
+    </div>
+</body>
+
+</html>
